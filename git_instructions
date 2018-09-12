@@ -1,0 +1,9 @@
+echo "# transportsystem" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+
+##do this for the first timw
+git remote add origin https://github.com/dawood26/transportsystem.git 
+git push -u origin master
+
