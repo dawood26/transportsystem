@@ -1,0 +1,15 @@
+if request.method == 'POST':
+    data = request.POST.copy()
+    department.name = data.get('name')
+    department.code = data.get('code')
+    department.description = data.get('description')
+
+    if department.is_valid():
+        department.save()
+        return redirect('transport:list')
+
+else:
+    form = CreateDepartment(department.__dict__)
+    context = {'form': form}
+
+    return render(request, 'transport/edit.html', context)

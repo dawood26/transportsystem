@@ -1,0 +1,25 @@
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 7bit
+Subject: Password reset on 127.0.0.1:8000
+From: webmaster@localhost
+To: dvdjuma84@gmail.com
+Date: Wed, 05 Sep 2018 22:07:03 -0000
+Message-ID: <153618522390.10194.12801864324912134678@machine>
+
+
+You're receiving this email because you requested a password reset for your user account at 127.0.0.1:8000.
+
+Please go to the following page and choose a new password:
+
+http://127.0.0.1:8000/accounts/reset/MQ/4zc-3f39410fcc9ee2b24faa/
+
+Your username, in case you've forgotten: david
+
+Thanks for using our site!
+
+The 127.0.0.1:8000 team
+
+
+
+-------------------------------------------------------------------------------

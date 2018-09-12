@@ -1,0 +1,26 @@
+{% extends "transport/base.html" %}
+{% block content %}
+<div class="container">
+<ul class="list-group">
+
+<h3 class="display-6">{{message}}</h3>
+    <div class="row">
+        <div class="col-8">
+            <ul class="list-group">
+                <li class="list-group-item">{{department.id}}</li>
+                <li class="list-group-item">{{department.name}}</li>
+                <li class="list-group-item">{{department.code}}</li>
+                <li class="list-group-item">{{department.description}}</li>
+            </ul>
+            <p></p>
+            <a href="{% url 'transport:list'%}" class="btn btn-primary">Back to List </a>
+        </div>
+        <div class="col-4">
+
+        </div>
+    </div>
+
+</ul>
+
+</div>
+{% endblock %}

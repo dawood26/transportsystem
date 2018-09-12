@@ -1,0 +1,49 @@
+{% extends "transport/base.html" %}
+{% block content %}
+<div class="container">
+<p></p>
+<div class="row">
+<div class="col-sm-6">
+  <a href="{% url 'transport:create'%}" class="btn btn-primary">Create</a>
+</div>
+<div class="col-sm-6" >
+</div>
+</div>
+
+<p></p>
+<div class="row">
+
+    <div class="col-sm-8">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th scope="col">id</th>
+                  <th scope="col">Department</th>
+                  <th scope="col">Code</th>
+                  <th scope="col">Description</th>
+                    <th scope="col">&nbsp;</th>
+                </tr>
+              </thead>
+                <tbody>
+                {% for item in departmentlist %}
+                    <tr>
+                        <td>{{ item.id }}</td>
+                        <td>{{ item.name }}</td>
+                        <td>{{ item.code }}</td>
+                        <td>{{ item.description }}</td>
+                        <td><a href="{% url 'transport:edit' item.id %}" class="btn btn-primary">Edit</a> &nbsp;
+                        <a href="{% url 'transport:detail' item.id %}" class="btn btn-primary">Details</a></td>
+                    </tr>
+                {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-4"></div>
+
+    </div>
+<div>
+</div>
+</div>
+{% endblock %}
+
+
